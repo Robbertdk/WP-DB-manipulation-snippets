@@ -12,7 +12,7 @@ Most of these snippets are gathered from different WordPress-related websites an
     - [Close trackbacks and pingbacks](#Close trackbacks and pingbacks)
     - [Close comments](#Close comments)
 
-# Close trackbacks and pingbacks
+## Close trackbacks and pingbacks
 
 ```
 UPDATE wp_posts SET ping_status='closed' WHERE post_status = 'publish' AND post_type = 'post';
@@ -20,7 +20,7 @@ UPDATE wp_posts SET ping_status='closed' WHERE post_status = 'publish' AND post_
 ```
 [source](https://wordpress.org/support/topic/globally-disable-pingback-and-trackback)
 
-#Close comments
+## Close comments
 ```
 UPDATE wp_posts SET comment_status='closed' WHERE post_status = 'publish' AND post_type = 'post';
 UPDATE wp_posts SET comment_status='closed' WHERE post_status = 'publish' AND post_type = 'page';
