@@ -7,9 +7,9 @@ A list of SQL queries to make rapid changes in the database of a  WordPress-site
 Most of these snippets are gathered from different WordPress-related websites and the WordPress forums. I credited the author for each snippets with a link to the source, whenever possible. If you notice that some snippets needs the correct source, please send a pull-request or contact me.
 
 # Table of Contents
-- [migrate WordPress Database]()
+- [Migrate WordPress Database](#Migrate WordPress Database)
     -[Change url](#Change url)   
-- [wp_posts](#Close trackbacks and pingbacks)
+- [Edit Posts & Pages](#Edit Post & Pages)
     - [Close trackbacks and pingbacks](#Close trackbacks and pingbacks)
     - [Close comments](#Close comments)
     - [Set the posts of author A to author B](#Set the posts of author A to author B)
@@ -28,6 +28,8 @@ UPDATE wp_posts SET guid = REPLACE (guid, @oldurl, @newurl) WHERE post_type = 'a
 UPDATE wp_postmeta SET meta_value = REPLACE (meta_value, @oldurl, @newurl);
 ```
 [Source Lucas Serafim](http://www.onextrapixel.com/2010/01/30/13-useful-wordpress-sql-queries-you-wish-you-knew-earlier/#comment-826362117)
+
+## Edit Post & Pages
 
 ### Close trackbacks and pingbacks
 
