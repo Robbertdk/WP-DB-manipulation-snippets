@@ -50,7 +50,7 @@ UPDATE wp_posts SET comment_status='closed' WHERE post_status = 'publish' AND po
 
 ```
 UPDATE wp_posts SET post_author = 'new-author-id' WHERE post_author = 'old-author-id';
-``
+```
 [source onextrapixel](http://www.onextrapixel.com/2010/01/30/13-useful-wordpress-sql-queries-you-wish-you-knew-earlier/)
 
 ## 
