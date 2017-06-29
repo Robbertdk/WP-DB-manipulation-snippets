@@ -17,7 +17,6 @@ Most of these snippets are gathered from different WordPress-related websites an
 ## Migrate WordPress Database
 ### Change URL
 ```
-//just put in old url and new url
 set @oldurl = 'http://oldwp-url.com', @newurl = 'http://newwp-url.com';
 
 UPDATE wp_options SET option_value = replace(option_value, @oldurl, @newurl) WHERE option_name = 'home' OR option_name = 'siteurl';
