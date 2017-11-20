@@ -52,4 +52,9 @@ UPDATE wp_posts SET post_author = 'new-author-id' WHERE post_author = 'old-autho
 ```
 [source onextrapixel](http://www.onextrapixel.com/2010/01/30/13-useful-wordpress-sql-queries-you-wish-you-knew-earlier/)
 
-## 
+## Change post status
+
+```
+-- set post status publish posts to draft
+UPDATE wp_posts SET post_status = 'draft' WHERE post_status = 'publish' AND post_type = 'post';
+```
